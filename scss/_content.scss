@@ -1,0 +1,130 @@
+
+/* =Content
+-------------------------------------------------------------- */
+
+article {
+	margin-bottom: 3em;
+}
+
+
+.entry-title {
+	color: #000;
+	letter-spacing: -0.05em;
+	margin-bottom: 2.4rem;
+
+	a:link, a:visited {
+		color: #c63;
+		text-decoration: none;
+	}
+
+	a:active,
+	a:hover {
+		color: #ff4b33;
+		border-bottom: 1px solid #ff4b33;
+	}
+}
+
+
+
+/*  entry date */
+
+.entry-date { 
+	float:left; 
+	width: 11%; 
+	background:#422d2d; 
+	text-align:center; 
+	color:#fff;
+	padding:4px 2px; 
+	line-height:1; 
+	margin-left: -18.887072808321%;
+	font-family: $header-font;
+
+	.entry-date-day  { display:block; font-size:3rem; padding:3px 0;}
+	.entry-date-month  { display:block; font-size:1rem;}
+	.entry-date-year  { display:block; font-size:1.2rem;}
+
+}
+
+@media all and (max-width: $tablet) {
+
+
+	.entry-date {
+		float: none;
+		width: 100%;
+		background-color: transparent;
+		border: none;
+		margin:0;
+		color: #422d2d;
+		text-align: left;
+
+		.entry-date-day, 
+		.entry-date-month,
+		.entry-date-year  { 
+			display:inline;
+			font-size: 14px;
+			font-weight: normal;
+		}
+	}
+	
+}
+
+
+.entry-content blockquote.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 24px;
+	text-align: right;
+	width: 33%;
+}
+.entry-content blockquote.right {
+	float: right;
+	margin-left: 24px;
+	margin-right: 0;
+	text-align: left;
+	width: 33%;
+}
+.page-link {
+	clear: both;
+	color: #000;
+	font-weight: bold;
+	margin: 0 0 22px 0;
+	word-spacing: 0.5em;
+}
+.page-link a:link,
+.page-link a:visited {
+	background: #f1f1f1;
+	color: #333;
+	font-weight: normal;
+	padding: 0.5em 0.75em;
+	text-decoration: none;
+}
+
+.page-link a:active,
+.page-link a:hover {
+	color: #ff4b33;
+}
+
+
+.entry-fb { border-bottom: 1px solid #ccc; padding:0 0 4px 0}
+.entry-fb p { margin:0; font-size:12px}
+
+.comments-link { padding: 10px 0 20px 40px; background:url(images/comments.png) 0 50% no-repeat;}
+
+.entry-utility {
+	clear: both;
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+}
+.entry-meta a,
+.entry-utility a {
+	color: #c63;
+}
+.entry-meta a:hover,
+.entry-utility a:hover {
+	color: #ff4b33;
+}
+#content .video-player {
+	padding: 0;
+}
+

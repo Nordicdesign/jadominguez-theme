@@ -24,6 +24,7 @@
 		</div><!-- #colophon -->
 	</div><!-- #footer -->
 
+</div> <!-- wrapper ends -->
 
 <?php
 	/* Always have wp_footer() just before the closing </body>

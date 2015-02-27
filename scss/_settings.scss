@@ -1,8 +1,14 @@
 // settings
 
+$max-width: 1040px;
+
 //colours
 $body-colour: #666;
 
 //fonts
 $header-font: 'Droid Serif', 'Trebuchet MS', georgia, serif;
 $body-font: Georgia, "Bitstream Charter", serif;
+
+// breakpoints
+
+$tablet: 750px;

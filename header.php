@@ -48,10 +48,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="wrapper" class="hfeed">
+
+<header>
 	<div id="header">
 			<h1><a href="/" title="Ir a la portada">José Ángel Domínguez Calatayud</a></h1>
-            <h2>"La persona es protagonista y centro de la comunicación"</h2>
+            <p class="tagline">"La persona es protagonista y centro de la comunicación"</p>
 
 			<nav role="navigation">
 			  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
@@ -64,4 +65,7 @@
 
 			</nav><!-- navigation -->
 	</div><!-- #header -->
+</header>
+
+<div id="wrapper">
 

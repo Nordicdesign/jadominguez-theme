@@ -1,9 +1,7 @@
 
 /* =Fonts
 -------------------------------------------------------------- */
-h1, h2, h3, h4 { 
-	font-family: $header-font;
-}
+
 
 html {
 	font-size: 62.5%; 
@@ -16,7 +14,13 @@ body {
 	line-height: 1.4;
 }
 
-
+/*  headers */
+h1, h2, h3, h4 { 
+	font-family: $header-font;
+}
+h2 {
+	font-size: 2.4rem; 
+}
 
 /* Text elements */
 p {

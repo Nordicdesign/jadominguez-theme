@@ -1,4 +1,4 @@
-﻿<div class="sidebar">
+﻿<aside class="sidebar">
 		<div class="widget-area" role="complementary">
         	            
 			<ul class="xoxo">
@@ -99,4 +99,4 @@
 
 <?php endif; ?>
 
-</div>
+</aside>
