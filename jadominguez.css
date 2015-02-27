@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'jadominguez';
-  src: url('../font/jadominguez.eot?22871097');
-  src: url('../font/jadominguez.eot?22871097#iefix') format('embedded-opentype'),
-       url('../font/jadominguez.woff?22871097') format('woff'),
-       url('../font/jadominguez.ttf?22871097') format('truetype'),
-       url('../font/jadominguez.svg?22871097#jadominguez') format('svg');
+  src: url('font/jadominguez.eot?22871097');
+  src: url('font/jadominguez.eot?22871097#iefix') format('embedded-opentype'),
+       url('font/jadominguez.woff?22871097') format('woff'),
+       url('font/jadominguez.ttf?22871097') format('truetype'),
+       url('font/jadominguez.svg?22871097#jadominguez') format('svg');
   font-weight: normal;
   font-style: normal;
 }
