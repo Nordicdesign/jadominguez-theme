@@ -1,0 +1,17 @@
+h1, h2, h3, h4 { font-family: 'Trebuchet MS', georgia, serif;}
+#content .entry-title {
+	letter-spacing: normal;
+	font-family: 'Trebuchet MS', georgia, serif;
+}
+.widget-title, .sidebar-module h3 {	
+	letter-spacing: normal;
+}
+
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+	font-family: 'Trebuchet MS', georgia, serif;
+}
