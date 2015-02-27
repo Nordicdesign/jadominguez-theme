@@ -16,8 +16,7 @@ Tags:
 @import 'content';
 @import 'comments';
 @import 'widgets';
-
-
+@import 'sidebar';
 
 
 /* =Global and Layout
@@ -56,6 +55,7 @@ body {
 .sidebar {
 	float: left;
 	width: 25.53191489%; /*  240/940  */
+	background-color: #FCFBF7;
 }
 
 #footer {

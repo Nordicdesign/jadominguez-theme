@@ -985,16 +985,38 @@ h3#reply-title {
 }
 
 /* Footer widget areas */
+/* line 1, scss/_sidebar.scss */
+.primary-sidebar {
+  font-size: 1.4rem;
+}
+/* line 5, scss/_sidebar.scss */
+.primary-sidebar div:nth-of-type(2),
+.primary-sidebar div:nth-of-type(3),
+.primary-sidebar div:nth-of-type(4) {
+  background: #E0E0E0;
+  border-top: 5px solid #BE6940;
+  margin-bottom: 2em;
+}
+/* line 12, scss/_sidebar.scss */
+.primary-sidebar > div {
+  padding: 6%;
+}
+/* line 16, scss/_sidebar.scss */
+.primary-sidebar h3 {
+  font-size: 1.8rem;
+  margin-bottom: .8em;
+}
+
 /* =Global and Layout
 -------------------------------------------------------------- */
-/* line 26, scss/style.scss */
+/* line 25, scss/style.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 32, scss/style.scss */
+/* line 31, scss/style.scss */
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -1002,12 +1024,12 @@ h3#reply-title {
   box-sizing: border-box;
 }
 
-/* line 38, scss/style.scss */
+/* line 37, scss/style.scss */
 body {
   background-color: #F9F7F0;
 }
 
-/* line 43, scss/style.scss */
+/* line 42, scss/style.scss */
 #wrapper {
   clear: both;
   width: 95%;
@@ -1015,7 +1037,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 50, scss/style.scss */
+/* line 49, scss/style.scss */
 #content {
   float: left;
   width: 74.46808511%;
@@ -1025,11 +1047,12 @@ body {
   background-color: #fff;
 }
 
-/* line 56, scss/style.scss */
+/* line 55, scss/style.scss */
 .sidebar {
   float: left;
   width: 25.53191489%;
   /*  240/940  */
+  background-color: #FCFBF7;
 }
 
 /* line 61, scss/style.scss */

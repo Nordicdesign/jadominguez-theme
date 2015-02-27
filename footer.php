@@ -17,9 +17,16 @@
 			</div><!-- #site-info -->
 
 			<div id="site-generator">
-				<?php do_action( 'twentyten_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyten' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyten' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s.', 'twentyten' ), 'WordPress' ); ?></a>
-			</div><!-- #site-generator -->
+			<?php
+				/**
+				 * Fires before the Twenty Fifteen footer text for footer customization.
+				 *
+				 * @since Twenty Fifteen 1.0
+				 */
+				do_action( 'twentyfifteen_credits' );
+			?>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Funciona con %s', 'twentyfifteen' ), 'WordPress' ); ?></a>
+		</div><!-- .site-info -->
 
 		</div><!-- #colophon -->
 	</div><!-- #footer -->
