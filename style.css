@@ -63,7 +63,7 @@ html {
 body {
   font-family: Georgia, "Bitstream Charter", serif;
   color: #666666;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.4;
 }
 
@@ -399,13 +399,13 @@ article {
 /* line 31, scss/_content.scss */
 .entry-date {
   float: left;
-  width: 11%;
+  width: 8.571428571429%;
   background: #422d2d;
   text-align: center;
   color: #fff;
   padding: 4px 2px;
   line-height: 1;
-  margin-left: -18.88707%;
+  margin-left: -11.42857%;
   font-family: "Droid Serif", "Trebuchet MS", georgia, serif;
 }
 /* line 42, scss/_content.scss */
@@ -1020,7 +1020,7 @@ body {
   float: left;
   width: 74.46808511%;
   /* 700/940  */
-  padding: 40px 2.857142857143% 0 11.428571428571%;
+  padding: 40px 2.857142857143% 0 8.510638297872%;
   /* 20/700  and  80/700 */
   background-color: #fff;
 }
