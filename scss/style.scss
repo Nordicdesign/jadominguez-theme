@@ -17,6 +17,7 @@ Tags:
 @import 'comments';
 @import 'widgets';
 @import 'sidebar';
+@import 'forms';
 
 
 /* =Global and Layout
@@ -56,6 +57,7 @@ body {
 	float: left;
 	width: 25.53191489%; /*  240/940  */
 	background-color: #FCFBF7;
+	height: 100%;
 }
 
 #footer {
@@ -131,7 +133,7 @@ header {
 /* =Menu
 -------------------------------------------------------------- */
 
-.menu {
+nav {
 	margin-top: 2em;
 
 	ul {
@@ -139,18 +141,36 @@ header {
 		margin: 0;	
 
 		li {
+			list-style: none;
 			float: left;
-			border-left:1px solid #bbb;
-		}
-		li:first-child { 
-			border:none;
+			margin:0 .5em 0 0;
+			padding: 0;
 		}
 
-		li.current_page_item > a,
-		li.current-menu-ancestor > a,
-		li.current-menu-item > a,
-		li.current-menu-parent > a {
-			color: #000;
+
+		li.menu-item {
+			background-color: #fff;
+
+			a {
+				color: #3E2E2E;
+				display: block;
+				padding: 5px 20px;
+				text-decoration: none;
+
+
+			}
+			a:hover {
+				background-color: #f2f3f4;
+			}
+		}
+
+		li.current-menu-item {
+			background-color: #807F7A;
+			
+			a {
+				color: #fff;	
+			}
+			
 		}
 
 
@@ -162,21 +182,10 @@ header {
 		  clear: both;
 		}
 
-	a {
-		color: #7b7b7b;
-		line-height:30px;
-		padding: 0 20px;
-		text-decoration: none;
-	}
 	
 
 }
  
-
-@media all and (max-width: 750px) {
-	.menu ul {float: none;}
-	.menu li:first-child a {padding-left: 0;}
-}
 
 
 

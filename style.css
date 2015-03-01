@@ -85,7 +85,7 @@ p {
 }
 
 /* line 29, scss/_typography.scss */
-ul {
+ul li {
   list-style: square;
   margin: 0 0 18px 1.5em;
 }
@@ -186,34 +186,23 @@ sub {
 }
 
 /* line 101, scss/_typography.scss */
-input[type="text"],
-textarea {
-  background: #f9f9f9;
-  border: 1px solid #ccc;
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  padding: 2px;
-}
-
-/* line 109, scss/_typography.scss */
 a:link {
   color: #c63;
 }
 
-/* line 112, scss/_typography.scss */
+/* line 104, scss/_typography.scss */
 a:visited {
   color: #cc6600;
 }
 
-/* line 116, scss/_typography.scss */
+/* line 108, scss/_typography.scss */
 a:active,
 a:hover {
   text-decoration: underline;
 }
 
 /* Text meant only for screen readers */
-/* line 121, scss/_typography.scss */
+/* line 113, scss/_typography.scss */
 .screen-reader-text {
   position: absolute;
   left: -9000px;
@@ -987,9 +976,10 @@ h3#reply-title {
 /* Footer widget areas */
 /* line 1, scss/_sidebar.scss */
 .primary-sidebar {
+  padding-top: 2em;
   font-size: 1.4rem;
 }
-/* line 5, scss/_sidebar.scss */
+/* line 7, scss/_sidebar.scss */
 .primary-sidebar div:nth-of-type(2),
 .primary-sidebar div:nth-of-type(3),
 .primary-sidebar div:nth-of-type(4) {
@@ -997,26 +987,49 @@ h3#reply-title {
   border-top: 5px solid #BE6940;
   margin-bottom: 2em;
 }
-/* line 12, scss/_sidebar.scss */
+/* line 14, scss/_sidebar.scss */
 .primary-sidebar > div {
   padding: 6%;
 }
-/* line 16, scss/_sidebar.scss */
+/* line 18, scss/_sidebar.scss */
 .primary-sidebar h3 {
   font-size: 1.8rem;
   margin-bottom: .8em;
 }
 
+/*FORMS*/
+/* line 5, scss/_forms.scss */
+form input,
+form textarea,
+form select {
+  font-family: Georgia, "Bitstream Charter", serif;
+  border: 1px solid #ddd;
+  padding: .5em .2em;
+  font-size: 1.5rem;
+}
+
+/* line 13, scss/_forms.scss */
+form input[type="text"]:focus,
+form textarea:focus {
+  border: 1px solid #3A8EE2;
+  background: #fff;
+}
+
+/* line 18, scss/_forms.scss */
+form input[type="submit"] {
+  cursor: pointer;
+}
+
 /* =Global and Layout
 -------------------------------------------------------------- */
-/* line 25, scss/style.scss */
+/* line 26, scss/style.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 31, scss/style.scss */
+/* line 32, scss/style.scss */
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -1024,12 +1037,12 @@ h3#reply-title {
   box-sizing: border-box;
 }
 
-/* line 37, scss/style.scss */
+/* line 38, scss/style.scss */
 body {
   background-color: #F9F7F0;
 }
 
-/* line 42, scss/style.scss */
+/* line 43, scss/style.scss */
 #wrapper {
   clear: both;
   width: 95%;
@@ -1037,7 +1050,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 49, scss/style.scss */
+/* line 50, scss/style.scss */
 #content {
   float: left;
   width: 74.46808511%;
@@ -1047,29 +1060,30 @@ body {
   background-color: #fff;
 }
 
-/* line 55, scss/style.scss */
+/* line 56, scss/style.scss */
 .sidebar {
   float: left;
   width: 25.53191489%;
   /*  240/940  */
   background-color: #FCFBF7;
+  height: 100%;
 }
 
-/* line 61, scss/style.scss */
+/* line 63, scss/style.scss */
 #footer {
   clear: both;
   width: 100%;
 }
 
 @media all and (max-width: 750px) {
-  /* line 68, scss/style.scss */
+  /* line 70, scss/style.scss */
   #content {
     float: none;
     width: 100%;
     margin: 0;
   }
 
-  /* line 73, scss/style.scss */
+  /* line 75, scss/style.scss */
   .sidebar {
     float: none;
     width: 100%;
@@ -1077,30 +1091,30 @@ body {
 }
 /* =Header
 -------------------------------------------------------------- */
-/* line 86, scss/style.scss */
+/* line 88, scss/style.scss */
 header {
   background-color: #F4F0E1;
 }
 
-/* line 90, scss/style.scss */
+/* line 92, scss/style.scss */
 #header {
   width: 95%;
   max-width: 1040px;
   border-bottom: 10px solid #807F7A;
   margin: 0 auto;
 }
-/* line 96, scss/style.scss */
+/* line 98, scss/style.scss */
 #header h1 {
   color: #422d2d;
   font-size: 2.5rem;
   padding: 30px 0 5px;
 }
-/* line 101, scss/style.scss */
+/* line 103, scss/style.scss */
 #header h1 a {
   color: #422d2d;
   text-decoration: none;
 }
-/* line 107, scss/style.scss */
+/* line 109, scss/style.scss */
 #header .tagline {
   color: #7b7b7b;
   font-size: 1.2rem;
@@ -1108,11 +1122,11 @@ header {
 }
 
 @media all and (max-width: 750px) {
-  /* line 119, scss/style.scss */
+  /* line 121, scss/style.scss */
   #header h1, #header .tagline {
     padding: 0;
   }
-  /* line 123, scss/style.scss */
+  /* line 125, scss/style.scss */
   #header h1 {
     font-size: 2.2rem;
     margin: 5px 0 10px;
@@ -1120,59 +1134,55 @@ header {
 }
 /* =Menu
 -------------------------------------------------------------- */
-/* line 134, scss/style.scss */
-.menu {
+/* line 136, scss/style.scss */
+nav {
   margin-top: 2em;
 }
-/* line 137, scss/style.scss */
-.menu ul {
+/* line 139, scss/style.scss */
+nav ul {
   list-style: none;
   margin: 0;
 }
-/* line 141, scss/style.scss */
-.menu ul li {
+/* line 143, scss/style.scss */
+nav ul li {
+  list-style: none;
   float: left;
-  border-left: 1px solid #bbb;
+  margin: 0 .5em 0 0;
+  padding: 0;
 }
-/* line 145, scss/style.scss */
-.menu ul li:first-child {
-  border: none;
+/* line 151, scss/style.scss */
+nav ul li.menu-item {
+  background-color: #fff;
 }
-/* line 152, scss/style.scss */
-.menu ul li.current_page_item > a,
-.menu ul li.current-menu-ancestor > a,
-.menu ul li.current-menu-item > a,
-.menu ul li.current-menu-parent > a {
-  color: #000;
+/* line 154, scss/style.scss */
+nav ul li.menu-item a {
+  color: #3E2E2E;
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
 }
-/* line 159, scss/style.scss */
-.menu ul:after {
+/* line 162, scss/style.scss */
+nav ul li.menu-item a:hover {
+  background-color: #f2f3f4;
+}
+/* line 167, scss/style.scss */
+nav ul li.current-menu-item {
+  background-color: #807F7A;
+}
+/* line 170, scss/style.scss */
+nav ul li.current-menu-item a {
+  color: #fff;
+}
+/* line 179, scss/style.scss */
+nav ul:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 165, scss/style.scss */
-.menu a {
-  color: #7b7b7b;
-  line-height: 30px;
-  padding: 0 20px;
-  text-decoration: none;
-}
 
-@media all and (max-width: 750px) {
-  /* line 177, scss/style.scss */
-  .menu ul {
-    float: none;
-  }
-
-  /* line 178, scss/style.scss */
-  .menu li:first-child a {
-    padding-left: 0;
-  }
-}
 /* =Navigation
 -------------------------------------------------------------- */
-/* line 186, scss/style.scss */
+/* line 195, scss/style.scss */
 .navigation {
   color: #888;
   font-size: 12px;
@@ -1180,49 +1190,49 @@ header {
   overflow: hidden;
 }
 
-/* line 193, scss/style.scss */
+/* line 202, scss/style.scss */
 .navigation a:link,
 .navigation a:visited {
   color: #888;
   text-decoration: none;
 }
 
-/* line 198, scss/style.scss */
+/* line 207, scss/style.scss */
 .navigation a:active,
 .navigation a:hover {
   color: #ff4b33;
 }
 
-/* line 201, scss/style.scss */
+/* line 210, scss/style.scss */
 .nav-previous {
   float: left;
   width: 50%;
 }
 
-/* line 205, scss/style.scss */
+/* line 214, scss/style.scss */
 .nav-next {
   float: right;
   text-align: right;
   width: 50%;
 }
 
-/* line 210, scss/style.scss */
+/* line 219, scss/style.scss */
 #nav-above {
   margin: 0 0 18px 0;
 }
 
-/* line 213, scss/style.scss */
+/* line 222, scss/style.scss */
 #nav-above {
   display: none;
 }
 
-/* line 217, scss/style.scss */
+/* line 226, scss/style.scss */
 .paged #nav-above,
 .single #nav-above {
   display: block;
 }
 
-/* line 220, scss/style.scss */
+/* line 229, scss/style.scss */
 #nav-below {
   margin: -18px 0 0 0;
 }
@@ -1230,7 +1240,7 @@ header {
 /* =Footer
 -------------------------------------------------------------- */
 /* Structure the footer area */
-/* line 234, scss/style.scss */
+/* line 243, scss/style.scss */
 #site-info {
   float: left;
   font-size: 14px;
@@ -1238,30 +1248,30 @@ header {
   width: 700px;
 }
 
-/* line 240, scss/style.scss */
+/* line 249, scss/style.scss */
 #site-info .license {
   line-height: 30px;
   font-weight: normal;
 }
 
-/* line 244, scss/style.scss */
+/* line 253, scss/style.scss */
 .license img {
   padding: 0 5px 0 0;
   vertical-align: middle;
 }
 
-/* line 246, scss/style.scss */
+/* line 255, scss/style.scss */
 #site-generator {
   float: right;
   width: 220px;
 }
 
-/* line 251, scss/style.scss */
+/* line 260, scss/style.scss */
 #footer {
   margin-bottom: 20px;
 }
 
-/* line 254, scss/style.scss */
+/* line 263, scss/style.scss */
 #colophon {
   border-top: 4px solid #000;
   margin-top: -4px;
@@ -1269,24 +1279,24 @@ header {
   padding: 18px 0;
 }
 
-/* line 260, scss/style.scss */
+/* line 269, scss/style.scss */
 #site-info {
   font-weight: bold;
 }
 
-/* line 263, scss/style.scss */
+/* line 272, scss/style.scss */
 #site-info a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 267, scss/style.scss */
+/* line 276, scss/style.scss */
 #site-generator {
   font-style: italic;
   position: relative;
 }
 
-/* line 271, scss/style.scss */
+/* line 280, scss/style.scss */
 #site-generator a {
   background: url(images/wordpress.png) center left no-repeat;
   color: #666;
@@ -1296,12 +1306,12 @@ header {
   text-decoration: none;
 }
 
-/* line 279, scss/style.scss */
+/* line 288, scss/style.scss */
 #site-generator a:hover {
   text-decoration: underline;
 }
 
-/* line 282, scss/style.scss */
+/* line 291, scss/style.scss */
 img#wpstats {
   display: block;
   margin: 0 auto 10px;

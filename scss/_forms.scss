@@ -1,0 +1,22 @@
+/*FORMS*/
+
+form input,
+form textarea,
+form select  {
+	font-family: $body-font;
+	border: 1px solid #ddd;
+	padding: .5em .2em;
+	font-size: 1.5rem;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+	border: 1px solid #3A8EE2;
+	background: #fff;
+	}
+
+form input[type="submit"] {
+	cursor: pointer;
+
+}
+
