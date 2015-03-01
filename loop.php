@@ -73,9 +73,11 @@
 			</div><!-- .entry-utility -->
 		</div><!-- #post-## -->
 
+		</article>
+		
 		<?php comments_template( '', true ); ?>
 
-		</article>
+		
 
 <?php endwhile; // End the loop. Whew. ?>
 

@@ -1,4 +1,4 @@
-# TODO
+# To do 
 
 * Fix footer
 * Check comments
@@ -18,4 +18,4 @@
 
 ## Low priority
 
-* Sticky post
+* 	Sticky post
