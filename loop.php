@@ -61,14 +61,15 @@
 	<?php endif; ?>
 			<div class="entry-fb">
             	<script src="http://connect.facebook.net/es_ES/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" layout="button_count" show_faces="false" width="140" font=""></fb:like>
-				
-
             </div>
+
 			<div class="entry-utility">
-				<?php the_tags( '<ul><li>', '</li><li>', '</li></ul>' ); ?>
+				<?php the_tags( '<p>Tags: ', ', ', '.</p>' ); ?>
 				
-				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
-				<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
+				<div class="comments">
+					<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
+					<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
+				</div>
 			</div><!-- .entry-utility -->
 		</div><!-- #post-## -->
 

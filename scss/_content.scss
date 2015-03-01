@@ -3,13 +3,13 @@
 -------------------------------------------------------------- */
 
 article {
-	margin-bottom: 3em;
+	margin-bottom: 5em;
 }
 
 
 .entry-title {
 	color: #000;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.02em;
 	margin-bottom: 2.4rem;
 
 	a:link, a:visited {
@@ -109,32 +109,21 @@ article {
 
 
 .entry-fb { 
-	padding:0 0 1em 0;
+	border-top: 5px solid #E0E0E0;
+	padding:1em 0 1em 0;
 }
 
 .comments-link { padding: 10px 0 20px 40px; background:url(images/comments.png) 0 50% no-repeat;}
 
 .entry-utility {
-	li {
-		float: left;
-		list-style: none;
-		background-color: #E4DCC1;
-		border-radius: 100px;
-		padding: 5px 1em;
+	p {
 		font-size: 1.3rem;
-		margin: 0 .2em .3em 0;
-
-		a {
-			text-decoration: none;
-			color: #111;
-		}
 	}
-}
 
-.entry-utility ul:after {
-	content: "";
-	display: table;
-	clear: both;
+	.comments {
+		padding-top: 1em;
+		border-top: 3px dotted #e5e5e5;
+	}
 }
 
 .entry-meta a,

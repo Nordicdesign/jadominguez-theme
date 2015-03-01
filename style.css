@@ -363,13 +363,13 @@ img.aligncenter {
 -------------------------------------------------------------- */
 /* line 5, scss/_content.scss */
 article {
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
 
 /* line 10, scss/_content.scss */
 .entry-title {
   color: #000;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   margin-bottom: 2.4rem;
 }
 /* line 15, scss/_content.scss */
@@ -484,51 +484,39 @@ article {
 
 /* line 111, scss/_content.scss */
 .entry-fb {
-  padding: 0 0 1em 0;
+  border-top: 5px solid #E0E0E0;
+  padding: 1em 0 1em 0;
 }
 
-/* line 115, scss/_content.scss */
+/* line 116, scss/_content.scss */
 .comments-link {
   padding: 10px 0 20px 40px;
   background: url(images/comments.png) 0 50% no-repeat;
 }
 
-/* line 118, scss/_content.scss */
-.entry-utility li {
-  float: left;
-  list-style: none;
-  background-color: #E4DCC1;
-  border-radius: 100px;
-  padding: 5px 1em;
+/* line 119, scss/_content.scss */
+.entry-utility p {
   font-size: 1.3rem;
-  margin: 0 .2em .3em 0;
 }
-/* line 127, scss/_content.scss */
-.entry-utility li a {
-  text-decoration: none;
-  color: #111;
-}
-
-/* line 134, scss/_content.scss */
-.entry-utility ul:after {
-  content: "";
-  display: table;
-  clear: both;
+/* line 123, scss/_content.scss */
+.entry-utility .comments {
+  padding-top: 1em;
+  border-top: 3px dotted #e5e5e5;
 }
 
-/* line 141, scss/_content.scss */
+/* line 130, scss/_content.scss */
 .entry-meta a,
 .entry-utility a {
   color: #c63;
 }
 
-/* line 145, scss/_content.scss */
+/* line 134, scss/_content.scss */
 .entry-meta a:hover,
 .entry-utility a:hover {
   color: #ff4b33;
 }
 
-/* line 148, scss/_content.scss */
+/* line 137, scss/_content.scss */
 #content .video-player {
   padding: 0;
 }
@@ -1121,14 +1109,15 @@ header {
 #header h1 {
   color: #422d2d;
   font-size: 2.4rem;
+  letter-spacing: -0.02em;
   padding: 30px 0 5px;
 }
-/* line 104, scss/style.scss */
+/* line 105, scss/style.scss */
 #header h1 a {
   color: #422d2d;
   text-decoration: none;
 }
-/* line 110, scss/style.scss */
+/* line 111, scss/style.scss */
 #header .tagline {
   color: #7b7b7b;
   font-size: 1.8rem;
@@ -1136,11 +1125,11 @@ header {
 }
 
 @media all and (max-width: 750px) {
-  /* line 122, scss/style.scss */
+  /* line 123, scss/style.scss */
   #header h1, #header .tagline {
     padding: 0;
   }
-  /* line 126, scss/style.scss */
+  /* line 127, scss/style.scss */
   #header h1 {
     font-size: 2.2rem;
     margin: 5px 0 10px;
@@ -1148,46 +1137,46 @@ header {
 }
 /* =Menu
 -------------------------------------------------------------- */
-/* line 137, scss/style.scss */
+/* line 138, scss/style.scss */
 nav {
   margin-top: 2em;
 }
-/* line 140, scss/style.scss */
+/* line 141, scss/style.scss */
 nav ul {
   list-style: none;
   margin: 0;
 }
-/* line 144, scss/style.scss */
+/* line 145, scss/style.scss */
 nav ul li {
   list-style: none;
   float: left;
   margin: 0 .5em 0 0;
   padding: 0;
 }
-/* line 152, scss/style.scss */
+/* line 153, scss/style.scss */
 nav ul li.menu-item {
   background-color: #fff;
 }
-/* line 155, scss/style.scss */
+/* line 156, scss/style.scss */
 nav ul li.menu-item a {
   color: #3E2E2E;
   display: block;
   padding: 5px 20px;
   text-decoration: none;
 }
-/* line 163, scss/style.scss */
+/* line 164, scss/style.scss */
 nav ul li.menu-item a:hover {
   background-color: #f2f3f4;
 }
-/* line 168, scss/style.scss */
+/* line 169, scss/style.scss */
 nav ul li.current-menu-item {
   background-color: #807F7A;
 }
-/* line 171, scss/style.scss */
+/* line 172, scss/style.scss */
 nav ul li.current-menu-item a {
   color: #fff;
 }
-/* line 180, scss/style.scss */
+/* line 181, scss/style.scss */
 nav ul:after {
   content: "";
   display: table;
@@ -1196,7 +1185,7 @@ nav ul:after {
 
 /* =Navigation
 -------------------------------------------------------------- */
-/* line 196, scss/style.scss */
+/* line 197, scss/style.scss */
 .navigation {
   color: #888;
   font-size: 12px;
@@ -1204,49 +1193,49 @@ nav ul:after {
   overflow: hidden;
 }
 
-/* line 203, scss/style.scss */
+/* line 204, scss/style.scss */
 .navigation a:link,
 .navigation a:visited {
   color: #888;
   text-decoration: none;
 }
 
-/* line 208, scss/style.scss */
+/* line 209, scss/style.scss */
 .navigation a:active,
 .navigation a:hover {
   color: #ff4b33;
 }
 
-/* line 211, scss/style.scss */
+/* line 212, scss/style.scss */
 .nav-previous {
   float: left;
   width: 50%;
 }
 
-/* line 215, scss/style.scss */
+/* line 216, scss/style.scss */
 .nav-next {
   float: right;
   text-align: right;
   width: 50%;
 }
 
-/* line 220, scss/style.scss */
+/* line 221, scss/style.scss */
 #nav-above {
   margin: 0 0 18px 0;
 }
 
-/* line 223, scss/style.scss */
+/* line 224, scss/style.scss */
 #nav-above {
   display: none;
 }
 
-/* line 227, scss/style.scss */
+/* line 228, scss/style.scss */
 .paged #nav-above,
 .single #nav-above {
   display: block;
 }
 
-/* line 230, scss/style.scss */
+/* line 231, scss/style.scss */
 #nav-below {
   margin: -18px 0 0 0;
 }
@@ -1254,7 +1243,7 @@ nav ul:after {
 /* =Footer
 -------------------------------------------------------------- */
 /* Structure the footer area */
-/* line 244, scss/style.scss */
+/* line 245, scss/style.scss */
 #site-info {
   float: left;
   font-size: 14px;
@@ -1262,30 +1251,30 @@ nav ul:after {
   width: 700px;
 }
 
-/* line 250, scss/style.scss */
+/* line 251, scss/style.scss */
 #site-info .license {
   line-height: 30px;
   font-weight: normal;
 }
 
-/* line 254, scss/style.scss */
+/* line 255, scss/style.scss */
 .license img {
   padding: 0 5px 0 0;
   vertical-align: middle;
 }
 
-/* line 256, scss/style.scss */
+/* line 257, scss/style.scss */
 #site-generator {
   float: right;
   width: 220px;
 }
 
-/* line 261, scss/style.scss */
+/* line 262, scss/style.scss */
 #footer {
   margin-bottom: 20px;
 }
 
-/* line 264, scss/style.scss */
+/* line 265, scss/style.scss */
 #colophon {
   border-top: 4px solid #000;
   margin-top: -4px;
@@ -1293,24 +1282,24 @@ nav ul:after {
   padding: 18px 0;
 }
 
-/* line 270, scss/style.scss */
+/* line 271, scss/style.scss */
 #site-info {
   font-weight: bold;
 }
 
-/* line 273, scss/style.scss */
+/* line 274, scss/style.scss */
 #site-info a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 277, scss/style.scss */
+/* line 278, scss/style.scss */
 #site-generator {
   font-style: italic;
   position: relative;
 }
 
-/* line 281, scss/style.scss */
+/* line 282, scss/style.scss */
 #site-generator a {
   background: url(images/wordpress.png) center left no-repeat;
   color: #666;
@@ -1320,12 +1309,12 @@ nav ul:after {
   text-decoration: none;
 }
 
-/* line 289, scss/style.scss */
+/* line 290, scss/style.scss */
 #site-generator a:hover {
   text-decoration: underline;
 }
 
-/* line 292, scss/style.scss */
+/* line 293, scss/style.scss */
 img#wpstats {
   display: block;
   margin: 0 auto 10px;
