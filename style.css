@@ -445,7 +445,7 @@ article {
     font-weight: normal;
   }
 }
-/* line 75, scss/_content.scss */
+/* line 76, scss/_content.scss */
 .entry-content blockquote.left {
   float: left;
   margin-left: 0;
@@ -453,8 +453,7 @@ article {
   text-align: right;
   width: 33%;
 }
-
-/* line 82, scss/_content.scss */
+/* line 84, scss/_content.scss */
 .entry-content blockquote.right {
   float: right;
   margin-left: 24px;
@@ -463,7 +462,14 @@ article {
   width: 33%;
 }
 
-/* line 89, scss/_content.scss */
+@media all and (max-width: 750px) {
+  /* line 95, scss/_content.scss */
+  .entry-content, .entry {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+}
+/* line 101, scss/_content.scss */
 .page-link {
   clear: both;
   color: #000;
@@ -472,7 +478,7 @@ article {
   word-spacing: 0.5em;
 }
 
-/* line 97, scss/_content.scss */
+/* line 109, scss/_content.scss */
 .page-link a:link,
 .page-link a:visited {
   background: #f1f1f1;
@@ -482,47 +488,47 @@ article {
   text-decoration: none;
 }
 
-/* line 106, scss/_content.scss */
+/* line 118, scss/_content.scss */
 .page-link a:active,
 .page-link a:hover {
   color: #ff4b33;
 }
 
-/* line 111, scss/_content.scss */
+/* line 123, scss/_content.scss */
 .entry-fb {
   border-top: 5px solid #E0E0E0;
   padding: 1em 0 1em 0;
 }
 
-/* line 116, scss/_content.scss */
+/* line 128, scss/_content.scss */
 .comments-link {
   padding: 10px 0 20px 40px;
   background: url(images/comments.png) 0 50% no-repeat;
 }
 
-/* line 119, scss/_content.scss */
+/* line 131, scss/_content.scss */
 .entry-utility p {
   font-size: 1.3rem;
 }
-/* line 123, scss/_content.scss */
+/* line 135, scss/_content.scss */
 .entry-utility .comments {
   padding-top: 1em;
   border-top: 3px dotted #e5e5e5;
 }
 
-/* line 130, scss/_content.scss */
+/* line 142, scss/_content.scss */
 .entry-meta a,
 .entry-utility a {
   color: #c63;
 }
 
-/* line 134, scss/_content.scss */
+/* line 146, scss/_content.scss */
 .entry-meta a:hover,
 .entry-utility a:hover {
   color: #ff4b33;
 }
 
-/* line 137, scss/_content.scss */
+/* line 149, scss/_content.scss */
 #content .video-player {
   padding: 0;
 }
@@ -1131,67 +1137,74 @@ header {
 }
 
 @media all and (max-width: 750px) {
-  /* line 123, scss/style.scss */
-  #header h1, #header .tagline {
-    padding: 0;
-  }
-  /* line 127, scss/style.scss */
+  /* line 124, scss/style.scss */
   #header h1 {
     font-size: 2.2rem;
-    margin: 5px 0 10px;
+    margin: 0 0 10px;
   }
 }
 /* =Menu
 -------------------------------------------------------------- */
-/* line 138, scss/style.scss */
+/* line 135, scss/style.scss */
 nav {
   margin-top: 2em;
 }
-/* line 141, scss/style.scss */
+/* line 138, scss/style.scss */
 nav ul {
   list-style: none;
   margin: 0;
 }
-/* line 145, scss/style.scss */
+/* line 142, scss/style.scss */
 nav ul li {
   list-style: none;
   float: left;
   margin: 0 .5em 0 0;
   padding: 0;
 }
-/* line 153, scss/style.scss */
+/* line 150, scss/style.scss */
 nav ul li.menu-item {
   background-color: #fff;
 }
-/* line 156, scss/style.scss */
+/* line 153, scss/style.scss */
 nav ul li.menu-item a {
   color: #3E2E2E;
   display: block;
   padding: 5px 20px;
   text-decoration: none;
 }
-/* line 164, scss/style.scss */
+/* line 161, scss/style.scss */
 nav ul li.menu-item a:hover {
   background-color: #f2f3f4;
 }
-/* line 169, scss/style.scss */
+/* line 166, scss/style.scss */
 nav ul li.current-menu-item {
   background-color: #807F7A;
 }
-/* line 172, scss/style.scss */
+/* line 169, scss/style.scss */
 nav ul li.current-menu-item a {
   color: #fff;
 }
-/* line 181, scss/style.scss */
+/* line 178, scss/style.scss */
 nav ul:after {
   content: "";
   display: table;
   clear: both;
 }
 
+@media all and (max-width: 750px) {
+  /* line 190, scss/style.scss */
+  nav li.menu-item {
+    font-size: 1.4rem;
+  }
+  /* line 193, scss/style.scss */
+  nav li.menu-item a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /* =Navigation
 -------------------------------------------------------------- */
-/* line 197, scss/style.scss */
+/* line 205, scss/style.scss */
 .navigation {
   color: #888;
   font-size: 12px;
@@ -1199,49 +1212,49 @@ nav ul:after {
   overflow: hidden;
 }
 
-/* line 204, scss/style.scss */
+/* line 212, scss/style.scss */
 .navigation a:link,
 .navigation a:visited {
   color: #888;
   text-decoration: none;
 }
 
-/* line 209, scss/style.scss */
+/* line 217, scss/style.scss */
 .navigation a:active,
 .navigation a:hover {
   color: #ff4b33;
 }
 
-/* line 212, scss/style.scss */
+/* line 220, scss/style.scss */
 .nav-previous {
   float: left;
   width: 50%;
 }
 
-/* line 216, scss/style.scss */
+/* line 224, scss/style.scss */
 .nav-next {
   float: right;
   text-align: right;
   width: 50%;
 }
 
-/* line 221, scss/style.scss */
+/* line 229, scss/style.scss */
 #nav-above {
   margin: 0 0 18px 0;
 }
 
-/* line 224, scss/style.scss */
+/* line 232, scss/style.scss */
 #nav-above {
   display: none;
 }
 
-/* line 228, scss/style.scss */
+/* line 236, scss/style.scss */
 .paged #nav-above,
 .single #nav-above {
   display: block;
 }
 
-/* line 231, scss/style.scss */
+/* line 239, scss/style.scss */
 #nav-below {
   margin: -18px 0 0 0;
 }
@@ -1249,7 +1262,7 @@ nav ul:after {
 /* =Footer
 -------------------------------------------------------------- */
 /* Structure the footer area */
-/* line 245, scss/style.scss */
+/* line 253, scss/style.scss */
 #site-info {
   float: left;
   font-size: 14px;
@@ -1257,30 +1270,30 @@ nav ul:after {
   width: 700px;
 }
 
-/* line 251, scss/style.scss */
+/* line 259, scss/style.scss */
 #site-info .license {
   line-height: 30px;
   font-weight: normal;
 }
 
-/* line 255, scss/style.scss */
+/* line 263, scss/style.scss */
 .license img {
   padding: 0 5px 0 0;
   vertical-align: middle;
 }
 
-/* line 257, scss/style.scss */
+/* line 265, scss/style.scss */
 #site-generator {
   float: right;
   width: 220px;
 }
 
-/* line 262, scss/style.scss */
+/* line 270, scss/style.scss */
 #footer {
   margin-bottom: 20px;
 }
 
-/* line 265, scss/style.scss */
+/* line 273, scss/style.scss */
 #colophon {
   border-top: 4px solid #000;
   margin-top: -4px;
@@ -1288,24 +1301,24 @@ nav ul:after {
   padding: 18px 0;
 }
 
-/* line 271, scss/style.scss */
+/* line 279, scss/style.scss */
 #site-info {
   font-weight: bold;
 }
 
-/* line 274, scss/style.scss */
+/* line 282, scss/style.scss */
 #site-info a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 278, scss/style.scss */
+/* line 286, scss/style.scss */
 #site-generator {
   font-style: italic;
   position: relative;
 }
 
-/* line 282, scss/style.scss */
+/* line 290, scss/style.scss */
 #site-generator a {
   background: url(images/wordpress.png) center left no-repeat;
   color: #666;
@@ -1315,12 +1328,12 @@ nav ul:after {
   text-decoration: none;
 }
 
-/* line 290, scss/style.scss */
+/* line 298, scss/style.scss */
 #site-generator a:hover {
   text-decoration: underline;
 }
 
-/* line 293, scss/style.scss */
+/* line 301, scss/style.scss */
 img#wpstats {
   display: block;
   margin: 0 auto 10px;

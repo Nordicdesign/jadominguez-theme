@@ -72,20 +72,32 @@ article {
 }
 
 
-.entry-content blockquote.left {
-	float: left;
-	margin-left: 0;
-	margin-right: 24px;
-	text-align: right;
-	width: 33%;
+.entry-content {
+	blockquote.left {
+		float: left;
+		margin-left: 0;
+		margin-right: 24px;
+		text-align: right;
+		width: 33%;
+	}
+
+	blockquote.right {
+		float: right;
+		margin-left: 24px;
+		margin-right: 0;
+		text-align: left;
+		width: 33%;
+	}
+
 }
-.entry-content blockquote.right {
-	float: right;
-	margin-left: 24px;
-	margin-right: 0;
-	text-align: left;
-	width: 33%;
+
+@media all and (max-width: $tablet) {
+	.entry-content, .entry {
+		font-size: 1.7rem;
+		line-height: 1.5;
+	}
 }
+ 
 .page-link {
 	clear: both;
 	color: #000;
