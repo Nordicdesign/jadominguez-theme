@@ -47,13 +47,16 @@ article {
 
 @media all and (max-width: $tablet) {
 
+	.entry-title {
+		margin-bottom: 1rem;
+	}
 
 	.entry-date {
 		float: none;
 		width: 100%;
 		background-color: transparent;
 		border: none;
-		margin:0;
+		margin:0 0 .5em 0;
 		color: #422d2d;
 		text-align: left;
 
@@ -105,17 +108,35 @@ article {
 }
 
 
-.entry-fb { border-bottom: 1px solid #ccc; padding:0 0 4px 0}
-.entry-fb p { margin:0; font-size:12px}
+.entry-fb { 
+	padding:0 0 1em 0;
+}
 
 .comments-link { padding: 10px 0 20px 40px; background:url(images/comments.png) 0 50% no-repeat;}
 
 .entry-utility {
-	clear: both;
-	color: #888;
-	font-size: 12px;
-	line-height: 18px;
+	li {
+		float: left;
+		list-style: none;
+		background-color: #E4DCC1;
+		border-radius: 100px;
+		padding: 5px 1em;
+		font-size: 1.3rem;
+		margin: 0 .2em .3em 0;
+
+		a {
+			text-decoration: none;
+			color: #111;
+		}
+	}
 }
+
+.entry-utility ul:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .entry-meta a,
 .entry-utility a {
 	color: #c63;
