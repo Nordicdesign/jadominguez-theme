@@ -37,7 +37,7 @@ article {
 	padding:4px 2px; 
 	line-height:1; 
 	margin-left: -11.428571428571%;
-	font-family: $header-font;
+	font-family: $body-font;
 
 	.entry-date-day  { display:block; font-size:3rem; padding:3px 0;}
 	.entry-date-month  { display:block; font-size:1rem;}
@@ -120,12 +120,26 @@ article {
 }
 
 
-.entry-fb { 
+.fb-like { 
 	border-top: 5px solid #E0E0E0;
 	padding:1em 0 1em 0;
+	width: 100%;
 }
 
-.comments-link { padding: 10px 0 20px 40px; background:url(images/comments.png) 0 50% no-repeat;}
+.comments-link { 
+	border-radius: 100px;
+	border: 1px solid #c63;
+	padding: .5em 1em; 
+
+	i {
+		color: #c63;
+		padding-right: 5px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
 
 .entry-utility {
 	p {
@@ -134,7 +148,6 @@ article {
 
 	.comments {
 		padding-top: 1em;
-		border-top: 3px dotted #e5e5e5;
 	}
 }
 

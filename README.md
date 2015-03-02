@@ -1,9 +1,9 @@
 # To do 
 
-* Fix footer
+* Fix footer (including CC)
 * Check comments
+** Comments are not listed
 * Optimise for iPad
-* Check line length
 
 
 ## Tests
@@ -18,4 +18,4 @@
 
 ## Low priority
 
-* 	Sticky post
+* Sticky post

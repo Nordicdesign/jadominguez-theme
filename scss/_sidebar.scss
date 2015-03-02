@@ -1,6 +1,6 @@
 .primary-sidebar {
 	padding-top: 2em; 
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 
 	div:nth-of-type(2),
 	div:nth-of-type(3),
@@ -18,5 +18,13 @@
 	h3 {
 		font-size: 1.8rem;
 		margin-bottom: .8em;
+	}
+
+	i {
+		font-size: 1.7rem;
+	}
+
+	input[type="text"] {
+		width: 60%;
 	}
 }

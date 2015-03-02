@@ -61,63 +61,65 @@ html {
 
 /* line 10, scss/_typography.scss */
 body {
-  font-family: Georgia, "Bitstream Charter", serif;
+  font-family: Merriweather, Georgia, serif;
   color: #222222;
+  font-weight: 300;
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 /*  headers */
-/* line 18, scss/_typography.scss */
+/* line 19, scss/_typography.scss */
 h1, h2, h3, h4 {
-  font-family: "Droid Serif", "Trebuchet MS", georgia, serif;
+  font-family: Merriweather, Georgia, serif;
+  font-weight: 700;
 }
 
-/* line 22, scss/_typography.scss */
+/* line 24, scss/_typography.scss */
 h1,
 h2 {
   font-size: 2.4rem;
 }
 
 /* Text elements */
-/* line 27, scss/_typography.scss */
+/* line 29, scss/_typography.scss */
 p {
   margin-bottom: 1.8rem;
 }
 
-/* line 30, scss/_typography.scss */
+/* line 32, scss/_typography.scss */
 ul li {
   list-style: square;
   margin: 0 0 12px 1.5em;
 }
 
-/* line 35, scss/_typography.scss */
+/* line 37, scss/_typography.scss */
 .entry-content ul li {
   margin-left: 0;
 }
 
-/* line 38, scss/_typography.scss */
+/* line 40, scss/_typography.scss */
 ol {
   list-style: decimal;
   margin: 0 0 18px 1.5em;
 }
 
-/* line 42, scss/_typography.scss */
+/* line 44, scss/_typography.scss */
 ol ol {
   list-style: upper-alpha;
 }
 
-/* line 45, scss/_typography.scss */
+/* line 47, scss/_typography.scss */
 ol ol ol {
   list-style: lower-roman;
 }
 
-/* line 48, scss/_typography.scss */
+/* line 50, scss/_typography.scss */
 ol ol ol ol {
   list-style: lower-alpha;
 }
 
-/* line 54, scss/_typography.scss */
+/* line 56, scss/_typography.scss */
 ul ul,
 ol ol,
 ul ol,
@@ -125,38 +127,38 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 58, scss/_typography.scss */
+/* line 60, scss/_typography.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 63, scss/_typography.scss */
+/* line 65, scss/_typography.scss */
 cite,
 em,
 i {
   font-style: italic;
 }
 
-/* line 67, scss/_typography.scss */
+/* line 69, scss/_typography.scss */
 ins {
   background: #ffc;
   text-decoration: none;
 }
 
-/* line 71, scss/_typography.scss */
+/* line 73, scss/_typography.scss */
 blockquote {
   font-style: italic;
   padding: 0 3em;
 }
 
-/* line 77, scss/_typography.scss */
+/* line 79, scss/_typography.scss */
 blockquote cite,
 blockquote em,
 blockquote i {
   font-style: normal;
 }
 
-/* line 80, scss/_typography.scss */
+/* line 82, scss/_typography.scss */
 pre {
   background: #f7f7f7;
   color: #222;
@@ -165,14 +167,14 @@ pre {
   padding: 1.5em;
 }
 
-/* line 88, scss/_typography.scss */
+/* line 90, scss/_typography.scss */
 abbr,
 acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 93, scss/_typography.scss */
+/* line 95, scss/_typography.scss */
 sup,
 sub {
   height: 0;
@@ -181,34 +183,39 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 99, scss/_typography.scss */
+/* line 101, scss/_typography.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 102, scss/_typography.scss */
+/* line 104, scss/_typography.scss */
 sub {
   top: .5ex;
 }
 
-/* line 106, scss/_typography.scss */
+/* line 108, scss/_typography.scss */
 a:link {
   color: #c63;
 }
 
-/* line 109, scss/_typography.scss */
+/* line 111, scss/_typography.scss */
 a:visited {
   color: #cc6600;
 }
 
-/* line 113, scss/_typography.scss */
+/* line 115, scss/_typography.scss */
 a:active,
 a:hover {
   text-decoration: underline;
 }
 
+/* line 119, scss/_typography.scss */
+i {
+  color: #c63;
+}
+
 /* Text meant only for screen readers */
-/* line 118, scss/_typography.scss */
+/* line 124, scss/_typography.scss */
 .screen-reader-text {
   position: absolute;
   left: -9000px;
@@ -401,7 +408,7 @@ article {
   padding: 4px 2px;
   line-height: 1;
   margin-left: -11.42857%;
-  font-family: "Droid Serif", "Trebuchet MS", georgia, serif;
+  font-family: Merriweather, Georgia, serif;
 }
 /* line 42, scss/_content.scss */
 .entry-date .entry-date-day {
@@ -495,40 +502,50 @@ article {
 }
 
 /* line 123, scss/_content.scss */
-.entry-fb {
+.fb-like {
   border-top: 5px solid #E0E0E0;
   padding: 1em 0 1em 0;
+  width: 100%;
 }
 
-/* line 128, scss/_content.scss */
+/* line 129, scss/_content.scss */
 .comments-link {
-  padding: 10px 0 20px 40px;
-  background: url(images/comments.png) 0 50% no-repeat;
+  border-radius: 100px;
+  border: 1px solid #c63;
+  padding: .5em 1em;
+}
+/* line 134, scss/_content.scss */
+.comments-link i {
+  color: #c63;
+  padding-right: 5px;
+}
+/* line 139, scss/_content.scss */
+.comments-link a {
+  text-decoration: none;
 }
 
-/* line 131, scss/_content.scss */
+/* line 145, scss/_content.scss */
 .entry-utility p {
   font-size: 1.3rem;
 }
-/* line 135, scss/_content.scss */
+/* line 149, scss/_content.scss */
 .entry-utility .comments {
   padding-top: 1em;
-  border-top: 3px dotted #e5e5e5;
 }
 
-/* line 142, scss/_content.scss */
+/* line 155, scss/_content.scss */
 .entry-meta a,
 .entry-utility a {
   color: #c63;
 }
 
-/* line 146, scss/_content.scss */
+/* line 159, scss/_content.scss */
 .entry-meta a:hover,
 .entry-utility a:hover {
   color: #ff4b33;
 }
 
-/* line 149, scss/_content.scss */
+/* line 162, scss/_content.scss */
 #content .video-player {
   padding: 0;
 }
@@ -990,7 +1007,7 @@ h3#reply-title {
 /* line 1, scss/_sidebar.scss */
 .primary-sidebar {
   padding-top: 2em;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 /* line 7, scss/_sidebar.scss */
 .primary-sidebar div:nth-of-type(2),
@@ -1009,16 +1026,24 @@ h3#reply-title {
   font-size: 1.8rem;
   margin-bottom: .8em;
 }
+/* line 23, scss/_sidebar.scss */
+.primary-sidebar i {
+  font-size: 1.7rem;
+}
+/* line 27, scss/_sidebar.scss */
+.primary-sidebar input[type="text"] {
+  width: 60%;
+}
 
 /*FORMS*/
 /* line 5, scss/_forms.scss */
 form input,
 form textarea,
 form select {
-  font-family: Georgia, "Bitstream Charter", serif;
+  font-family: Merriweather, Georgia, serif;
   border: 1px solid #ddd;
   padding: .5em .2em;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 /* line 13, scss/_forms.scss */
@@ -1031,6 +1056,7 @@ form textarea:focus {
 /* line 18, scss/_forms.scss */
 form input[type="submit"] {
   cursor: pointer;
+  font-size: 1.3rem;
 }
 
 /* =Global and Layout

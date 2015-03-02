@@ -29,12 +29,10 @@
 						</div><!-- #author-description -->
 					</div><!-- #entry-author-info -->
 <?php endif; ?>
-					<div class="entry-fb">
-		            	<script src="http://connect.facebook.net/es_ES/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" layout="button_count" show_faces="false" width="100" font=""></fb:like>
-                	</div>
+					<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 
                 	<div class="entry-utility">
-                		<?php the_tags( '<p>Tags: ', ', ', '.</p>' ); ?>
+                		<?php the_tags( '<p>Etiquetas: ', ', ', '.</p>' ); ?>
             		</div>
 				</div><!-- #post-## -->
 

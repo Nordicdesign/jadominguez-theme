@@ -25,8 +25,9 @@
 		?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>"> -->
-	<link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/jadominguez-v2/style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+	<link rel="stylesheet" type="text/css" media="all" href="http://localhost:8888/jadominguez/wp-content/themes/jadominguez-v2/jadominguez.css">
+
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php
 		/* We add some JavaScript to pages with the comment form
@@ -42,13 +43,19 @@
 		 */
 		wp_head();
 	?>
-	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-    <!--[if IE]>
-    <link rel='stylesheet' href='http://www.jadominguez.com/wp-content/themes/jadominguez/ie.css' type='text/css' />
-    <![endif]--> 
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:300italic,300,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body <?php body_class(); ?>>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <header>
 	<div id="header">

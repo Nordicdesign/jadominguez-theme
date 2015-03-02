@@ -59,16 +59,18 @@
 			 	</div>
 				
 	<?php endif; ?>
-			<div class="entry-fb">
-            	<script src="http://connect.facebook.net/es_ES/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" layout="button_count" show_faces="false" width="140" font=""></fb:like>
-            </div>
+
+			<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
 
 			<div class="entry-utility">
-				<?php the_tags( '<p>Tags: ', ', ', '.</p>' ); ?>
-				
+				<?php the_tags( '<p>Etiquetas: ', ', ', '.</p>' ); ?>
+
 				<div class="comments">
-					<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
-					<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
+					
+					
+					<span class="comments-link"><i class="icon-chat"></i><?php comments_popup_link( __( 'Deja un comentario', 'twentyten' ), __( '1 Comentario', 'twentyten' ), __( '% Comentarios', 'twentyten' ) ); ?></span>
+					<?php edit_post_link( __( 'Editar', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 				</div>
 			</div><!-- .entry-utility -->
 		</div><!-- #post-## -->
