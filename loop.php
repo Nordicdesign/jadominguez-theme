@@ -43,9 +43,9 @@
         	<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Enlace permanente a <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
             <div class="entry-date">
-            	<span class="entry-date-day"><?php  echo get_the_date(j); ?></span>
-                <span class="entry-date-month"><?php  echo get_the_date(F); ?></span>
-                <span class="entry-date-year"><?php  echo get_the_date(Y); ?></span>
+            	<span class="entry-date-day"><?php  echo get_the_date('j'); ?></span>
+                <span class="entry-date-month"><?php  echo get_the_date('F'); ?></span>
+                <span class="entry-date-year"><?php  echo get_the_date('Y'); ?></span>
             </div>		
 
 	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
@@ -69,8 +69,8 @@
 				<div class="comments">
 					
 					
-					<span class="comments-link"><i class="icon-chat"></i><?php comments_popup_link( __( 'Deja un comentario', 'twentyten' ), __( '1 Comentario', 'twentyten' ), __( '% Comentarios', 'twentyten' ) ); ?></span>
-					<?php edit_post_link( __( 'Editar', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
+					<span class="comments-link"><i class="icon-chat"></i><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
+					<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 				</div>
 			</div><!-- .entry-utility -->
 		</div><!-- #post-## -->

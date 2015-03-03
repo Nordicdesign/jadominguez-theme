@@ -43,7 +43,11 @@ h3#comments-title {
 	margin-bottom: 24px;
 }
 .commentlist ol {
-	list-style: decimal;
+	list-style: none;
+
+	li {
+		list-style: none;
+	}
 }
 .commentlist .avatar {
 	position: absolute;
@@ -95,6 +99,7 @@ a.comment-edit-link:hover {
 }
 .commentlist .children li {
 	border: none;
+	list-style: none;
 	margin: 0;
 }
 .nopassword,
