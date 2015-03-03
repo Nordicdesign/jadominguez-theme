@@ -3,9 +3,9 @@
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
                      <div class="entry-date">
-                        <span class="entry-date-day"><?php  echo get_the_date(j); ?></span>
-                        <span class="entry-date-month"><?php  echo get_the_date(F); ?></span>
-                        <span class="entry-date-year"><?php  echo get_the_date(Y); ?></span>
+                        <span class="entry-date-day"><?php  echo get_the_date('j'); ?></span>
+                        <span class="entry-date-month"><?php  echo get_the_date('F'); ?></span>
+                        <span class="entry-date-year"><?php  echo get_the_date('Y'); ?></span>
                     </div>	
 
 					<div class="entry-content">
